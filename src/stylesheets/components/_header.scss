@@ -1,31 +1,37 @@
 // Important partials
 @import '../default/colours';
 @import '../default/fonts';
+@import '../default/arrow-style';
 
-
+// Header
 .header {
     background-color: white;
     display: flex;
     flex-direction: column;
+    // Logo
     .logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 5%;
         .logo-background-colour {
             background-color: black;
-            width: 30vw;
-            height: 20vh;
+            width: 100px;
+            height: 100px;
                 img {
-                    width: 30vw;
+                    width: 100px;
+                    height: 100px;
                 }
         }
     }
 
+    // Main Heading
     h1 {
         color: $main-colour;
         text-align: center;
         padding-top: 4%;
     }
+    // Secondary Heading
     h2 {
         color: $main-colour;
         text-align: center;
@@ -33,6 +39,8 @@
         font-family: $main-font;
 
     }
+
+    // Header Navigation Bar
     .header-nav-list {
         display: flex;
         flex-direction: row;
@@ -43,6 +51,9 @@
             font-family: $main-font;
             color: $main-colour;
         }
-
     }
+    // End Header Navigation Bar
 }
+// End Header
+
+

@@ -1,0 +1,20 @@
+// Main Page Content
+.main-container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    background-color: $main-colour;
+    border-radius: 8px;
+    color: white;
+    font-weight: 200;
+    height: 50vh;
+    .text {
+        display: flex;
+        font-family: $main-font;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+// End Main Page Content

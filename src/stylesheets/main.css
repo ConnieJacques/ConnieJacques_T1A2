@@ -13,14 +13,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
 }
 .header .logo-container .logo-background-colour {
   background-color: black;
-  width: 30vw;
-  height: 20vh;
+  width: 100px;
+  height: 100px;
 }
 .header .logo-container .logo-background-colour img {
-  width: 30vw;
+  width: 100px;
+  height: 100px;
 }
 .header h1 {
   color: #3B6991;
@@ -43,6 +45,107 @@
 .header .header-nav-list li {
   font-family: "Raleway", sans-serif;
   color: #3B6991;
+}
+
+.side-nav-container {
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30vh;
+  padding-left: 5vw;
+  height: 0;
+  width: 20vw;
+}
+.side-nav-container .side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: #0E9594;
+  height: 30vh;
+}
+.side-nav-container .side-nav li {
+  list-style-type: none;
+}
+
+.main-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  background-color: #3B6991;
+  border-radius: 8px;
+  color: white;
+  font-weight: 200;
+  height: 50vh;
+}
+.main-container .text {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer .return-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer .return-top a {
+  text-decoration: none;
+  font-size: 5rem;
+  color: #3B6991;
+  font-family: "Alex Brush", cursive;
+  margin-bottom: -1.5rem;
+}
+footer .return-top a:hover {
+  transform: scale(1.5);
+  filter: brightness(0.8);
+}
+footer .footer-container {
+  display: flex;
+}
+footer .footer-container .left-footer {
+  font-family: "Raleway", sans-serif;
+  color: #3B6991;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-left: 2%;
+}
+footer .footer-container .footer-arrow {
+  text-decoration: none;
+  font-size: 5rem;
+  color: #3B6991;
+  font-family: "Alex Brush", cursive;
+  margin-bottom: -1.5rem;
+  padding: 0 2%;
+}
+footer .footer-container .footer-arrow:hover {
+  transform: scale(1.5);
+  filter: brightness(0.8);
+}
+footer .footer-container .right-footer {
+  font-family: "Raleway", sans-serif;
+  color: #3B6991;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: right;
+  padding-right: 2%;
+}
+footer .footer-container .right-footer a {
+  text-decoration: none;
+  color: #3B6991;
+}
+footer .footer-container .right-footer a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #3B6991;
+  font-size: 0.5rem;
+  padding-top: 2%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+// Sticky Side Navigation Bar
+.side-nav-container {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30vh;
+    padding-left: 5vw;
+    height: 0;
+    width: 20vw;
+    .side-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        color: $secondary-colour;
+        height: 30vh;
+        li {
+            list-style-type: none;
+        }
+    }
+}
+// End Sticky Side Navigation Bar

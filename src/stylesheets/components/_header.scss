@@ -1,0 +1,48 @@
+// Important partials
+@import '../default/colours';
+@import '../default/fonts';
+
+
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo-background-colour {
+            background-color: black;
+            width: 30vw;
+            height: 20vh;
+                img {
+                    width: 30vw;
+                }
+        }
+    }
+
+    h1 {
+        color: $main-colour;
+        text-align: center;
+        padding-top: 4%;
+    }
+    h2 {
+        color: $main-colour;
+        text-align: center;
+        padding-top: 2%;
+        font-family: $main-font;
+
+    }
+    .header-nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 5% 0;
+        li {
+            font-family: $main-font;
+            color: $main-colour;
+        }
+
+    }
+}

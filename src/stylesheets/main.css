@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.header .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo-container .logo-background-colour {
+  background-color: black;
+  width: 30vw;
+  height: 20vh;
+}
+.header .logo-container .logo-background-colour img {
+  width: 30vw;
+}
+.header h1 {
+  color: #3B6991;
+  text-align: center;
+  padding-top: 4%;
+}
+.header h2 {
+  color: #3B6991;
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Raleway", sans-serif;
+}
+.header .header-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 5% 0;
+}
+.header .header-nav-list li {
+  font-family: "Raleway", sans-serif;
+  color: #3B6991;
+}
+
+/*# sourceMappingURL=main.css.map */

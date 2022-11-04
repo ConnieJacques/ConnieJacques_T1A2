@@ -1,0 +1,9 @@
+@mixin typewriter {
+white-space:nowrap;
+overflow:hidden;
+-webkit-animation: text 5s steps(40, end);
+animation-name: text;
+animation-duration:  5s;
+animation-timing-function: steps(40, end);
+animation-fill-mode: both;
+}

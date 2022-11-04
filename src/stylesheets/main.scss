@@ -4,5 +4,54 @@
 // Import element stylesheeets
 @import './components/header';
 @import './components/sticky-side-nav';
-@import './components/landing-main';
 @import './components/footer';
+
+// Imported partials
+@import './default/typewriter-animation';
+
+// Main Page Content
+.main-container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    height: 50vh;
+    p {
+        display: flex;
+        justify-content: flex-start;
+        color: black;
+        width: 75vw;
+        font-weight: 200;
+        font-family: $main-font;
+        font-size: 3rem;
+        line-height: 2;
+    }
+    .text1 {
+        @include typewriter;
+    }
+    .text2 {
+        @include typewriter;
+        animation-delay: 5s;
+    }
+    .text3 {
+        @include typewriter;
+        animation-delay: 10s;
+    }
+    .text4 {
+        @include typewriter;
+        animation-delay: 15s;
+    }
+
+    @keyframes text {
+        from { 
+            width: 0; 
+        }
+    }
+    
+    @-webkit-keyframes text {
+        from {
+            width: 0;
+        }
+    }
+    }
+// End Main Page Content

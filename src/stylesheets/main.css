@@ -62,29 +62,10 @@
   justify-content: space-evenly;
   font-size: 2rem;
   color: #0E9594;
-  height: 30vh;
+  height: 40vh;
 }
 .side-nav-container .side-nav li {
   list-style-type: none;
-}
-
-.main-container {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20vw;
-  background-color: #3B6991;
-  border-radius: 8px;
-  color: white;
-  font-weight: 200;
-  height: 50vh;
-}
-.main-container .text {
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  text-align: center;
 }
 
 footer .return-top {
@@ -112,6 +93,7 @@ footer .footer-container .left-footer {
   font-size: 1.2rem;
   text-align: left;
   padding-left: 2%;
+  padding-top: 5%;
 }
 footer .footer-container .footer-arrow {
   text-decoration: none;
@@ -146,6 +128,73 @@ footer .copyright {
   color: #3B6991;
   font-size: 0.5rem;
   padding-top: 2%;
+}
+
+.main-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  height: 50vh;
+}
+.main-container p {
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  width: 75vw;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  line-height: 2;
+}
+.main-container .text1 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+}
+.main-container .text2 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+.main-container .text3 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 10s;
+}
+.main-container .text4 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 15s;
+}
+@keyframes text {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes text {
+  from {
+    width: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

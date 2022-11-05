@@ -8,6 +8,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 .header .logo-container {
   display: flex;
@@ -67,8 +68,66 @@
 .header .header-nav-list li {
   font-family: "Raleway", sans-serif;
   color: #0E9594;
+  font-size: 1rem;
 }
 
+@media screen and (min-width: 480px) and (max-width: 770px) {
+  .header {
+    border-bottom: 20px solid black;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  .header .header-nav-list {
+    padding: 0;
+  }
+  .header .header-nav-list li {
+    font-size: 1.2rem;
+    padding-top: 2%;
+  }
+}
+@media screen and (min-width: 771px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 10px solid black;
+    padding-bottom: 1%;
+  }
+  .header .logo-container {
+    padding-left: 5%;
+  }
+  .header .headings {
+    padding: 5% 0 0 5%;
+  }
+  .header .headings h1 {
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+  .header .headings h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding-top: 5%;
+  }
+  .header .header-nav-container {
+    display: flex;
+    align-items: flex-end;
+    width: 50vw;
+  }
+  .header .header-nav-container .header-nav-list {
+    width: 50vw;
+    background-color: white;
+  }
+  .header .header-nav-container .header-nav-list li {
+    font-size: 1.2rem;
+  }
+}
 .side-nav-container {
   display: flex;
   position: sticky;

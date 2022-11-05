@@ -8,6 +8,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    border: none;
     // Logo
     .logo-container {
         display: flex;
@@ -24,7 +25,6 @@
             animation-delay: 2s;
             animation-iteration-count: 1;
             animation-direction: alternate;
-
                 img {
                     width: 100px;
                     height: 100px;
@@ -32,6 +32,7 @@
         }
     }
 
+    // Animation Keyframes
     @keyframes spin {
         0% {
             background: conic-gradient( orange, rgb(238, 22, 22), yellow, rgb(21, 177, 21), rgb(156, 234, 234), rgb(101, 101, 241), rgb(157, 14, 157), rgb(241, 154, 169));
@@ -73,10 +74,75 @@
         li {
             font-family: $main-font;
             color: $secondary-colour;
+            font-size: 1rem;
         }
     }
     // End Header Navigation Bar
 }
 // End Header
 
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 770px) {
+    .header {
+        border-bottom: 20px solid black;
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        .header-nav-list {
+            padding: 0;
+            li {
+                font-size: 1.2rem;
+                padding-top: 2%;
+
+            }
+        }
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 771px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px solid black;
+        padding-bottom: 1%;
+        .logo-container {
+            padding-left: 5%;
+        }
+        .headings {
+            padding: 5% 0 0 5%;
+            h1 {
+                font-size: 2.2rem;
+                line-height: 1;
+            }
+            h2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                line-height: 1;
+                padding-top: 5%;
+            }
+        }
+        .header-nav-container {
+            display: flex;
+            align-items: flex-end;
+            width: 50vw;
+            .header-nav-list {
+                width: 50vw;
+                background-color: white;
+                li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+// End Desktop/Laptop
 

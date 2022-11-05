@@ -44,12 +44,17 @@
   color: #3B6991;
   text-align: center;
   padding-top: 4%;
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.2rem;
 }
 .header h2 {
   color: #3B6991;
   text-align: center;
   padding-top: 2%;
   font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-bottom: 5%;
 }
 .header .header-nav-list {
   display: flex;
@@ -57,10 +62,11 @@
   justify-content: space-evenly;
   list-style-type: none;
   padding: 5% 0;
+  background-color: black;
 }
 .header .header-nav-list li {
   font-family: "Raleway", sans-serif;
-  color: #3B6991;
+  color: #0E9594;
 }
 
 .side-nav-container {

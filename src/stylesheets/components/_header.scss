@@ -48,6 +48,8 @@
         color: $main-colour;
         text-align: center;
         padding-top: 4%;
+        font-family: $handwritten-font;
+        font-size: 2.2rem;
     }
     // Secondary Heading
     h2 {
@@ -55,7 +57,9 @@
         text-align: center;
         padding-top: 2%;
         font-family: $main-font;
-
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding-bottom: 5%;
     }
 
     // Header Navigation Bar
@@ -65,9 +69,10 @@
         justify-content: space-evenly;
         list-style-type: none;
         padding: 5% 0;
+        background-color: black;
         li {
             font-family: $main-font;
-            color: $main-colour;
+            color: $secondary-colour;
         }
     }
     // End Header Navigation Bar

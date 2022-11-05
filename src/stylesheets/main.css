@@ -15,14 +15,30 @@
   align-items: center;
   padding-top: 5%;
 }
-.header .logo-container .logo-background-colour {
-  background-color: black;
+.header .logo-container .logo-background {
+  background: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+.header .logo-container .logo-background img {
   width: 100px;
   height: 100px;
 }
-.header .logo-container .logo-background-colour img {
-  width: 100px;
-  height: 100px;
+@keyframes spin {
+  0% {
+    background: conic-gradient(orange, rgb(238, 22, 22), yellow, rgb(21, 177, 21), rgb(156, 234, 234), rgb(101, 101, 241), rgb(157, 14, 157), rgb(241, 154, 169));
+    transform: rotate(0);
+  }
+  100% {
+    background: conic-gradient(orange, rgb(238, 22, 22), yellow, rgb(21, 177, 21), rgb(156, 234, 234), rgb(101, 101, 241), rgb(157, 14, 157), rgb(241, 154, 169));
+    transform: rotate(360deg);
+  }
 }
 .header h1 {
   color: #3B6991;
@@ -51,7 +67,7 @@
   display: flex;
   position: sticky;
   position: -webkit-sticky;
-  top: 30vh;
+  top: 20vh;
   padding-left: 5vw;
   height: 0;
   width: 20vw;
@@ -68,6 +84,10 @@
   list-style-type: none;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
 footer .return-top {
   display: flex;
   justify-content: center;
@@ -93,7 +113,6 @@ footer .footer-container .left-footer {
   font-size: 1.2rem;
   text-align: left;
   padding-left: 2%;
-  padding-top: 5%;
 }
 footer .footer-container .footer-arrow {
   text-decoration: none;
@@ -127,15 +146,16 @@ footer .copyright {
   font-family: "Raleway", sans-serif;
   color: #3B6991;
   font-size: 0.5rem;
-  padding-top: 2%;
+  padding: 2% 0;
 }
 
 .main-container {
-  width: 70vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   margin-left: 20vw;
-  height: 50vh;
+  height: 40vh;
+  padding-top: 10%;
 }
 .main-container p {
   display: flex;
@@ -144,29 +164,11 @@ footer .copyright {
   width: 75vw;
   font-weight: 200;
   font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-  line-height: 2;
+  font-size: 2.2rem;
+  line-height: 2.5;
 }
-.main-container .text1 {
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: text 5s steps(40, end);
-  animation-name: text;
-  animation-duration: 5s;
-  animation-timing-function: steps(40, end);
-  animation-fill-mode: both;
-}
-.main-container .text2 {
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: text 5s steps(40, end);
-  animation-name: text;
-  animation-duration: 5s;
-  animation-timing-function: steps(40, end);
-  animation-fill-mode: both;
-  animation-delay: 5s;
-}
-.main-container .text3 {
+
+.text1 {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: text 5s steps(40, end);
@@ -176,7 +178,8 @@ footer .copyright {
   animation-fill-mode: both;
   animation-delay: 10s;
 }
-.main-container .text4 {
+
+.text2 {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: text 5s steps(40, end);
@@ -186,6 +189,29 @@ footer .copyright {
   animation-fill-mode: both;
   animation-delay: 15s;
 }
+
+.text3 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 20s;
+}
+
+.text4 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 25s;
+}
+
 @keyframes text {
   from {
     width: 0;

@@ -1,0 +1,75 @@
+// Import reset settings
+@import './default/reset';
+
+// Import element stylesheeets
+@import './components/header';
+@import './components/sticky-side-nav';
+@import './components/footer';
+
+// Main Page Content
+main {
+    padding: 10% 0 5% 0;
+    .about-container {
+        width: 70vw;
+        background-color: $main-colour;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20vw;
+        padding: 5% 2%;
+        h2 {
+            font-family: $main-font;
+            font-size: 3rem;
+            text-align: center;
+            padding-bottom: 5%;
+            color: white;
+        }
+        p {
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            width: 65vw;
+            font-weight: 200;
+            font-family: $main-font;
+            font-size: 1.2rem;
+            line-height: 2;
+            overflow-wrap: break-word;
+            padding-bottom: 5%;
+        }
+        .resume-container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .resume {
+                background-color: $secondary-colour;
+                border: none;
+                border-radius: 8px;
+                padding: 5%;
+                a {
+                    color: white;
+                    font-size: 2rem;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+}
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 770px) {
+    main {
+        padding-bottom: 0;
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 771px) {
+    .resume-container {
+        width: 30vw;
+    }
+}
+// End Desktop/Laptop
+
+// End Main Page Content

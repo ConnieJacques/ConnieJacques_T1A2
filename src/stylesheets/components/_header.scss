@@ -79,12 +79,10 @@
     }
     // End Header Navigation Bar
 }
-// End Header
 
 // Tablet Media Breakpoint
 @media screen and (min-width: 480px) and (max-width: 770px) {
     .header {
-        border-bottom: 20px solid black;
         h1 {
             font-size: 2.5rem;
         }
@@ -93,11 +91,9 @@
         }
         
         .header-nav-list {
-            padding: 0;
+            padding: 2%;
             li {
                 font-size: 1.2rem;
-                padding-top: 2%;
-
             }
         }
     }
@@ -111,9 +107,10 @@
         flex-direction: row;
         justify-content: space-between;
         border-bottom: 10px solid black;
-        padding-bottom: 1%;
+        padding-bottom: 3%;
         .logo-container {
             padding-left: 5%;
+            padding-top: 2%;
         }
         .headings {
             padding: 5% 0 0 5%;
@@ -139,6 +136,7 @@
                 background-color: white;
                 li {
                     font-size: 1.2rem;
+                    color: $main-colour;
                 }
             }
         }
@@ -146,3 +144,4 @@
 }
 // End Desktop/Laptop
 
+// End Header

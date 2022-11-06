@@ -11,11 +11,9 @@
 
 // Main Page Content
 .main-container {
-    width: 50vw;
     display: flex;
     flex-direction: column;
     margin-left: 20vw;
-    height: 40vh;
     padding-top: 10%;
     p {
         display: flex;
@@ -28,32 +26,55 @@
         line-height: 2.5;
     }
 }
-    .text1 {
-        @include typewriter;
-        animation-delay: 10s;
-    }
-    .text2 {
-        @include typewriter;
-        animation-delay: 15s;
-    }
-    .text3 {
-        @include typewriter;
-        animation-delay: 20s;
-    }
-    .text4 {
-        @include typewriter;
-        animation-delay: 25s;
-    }
+//     .text1 {
+//         @include typewriter;
+//         animation-delay: 10s;
+//     }
+//     .text2 {
+//         @include typewriter;
+//         animation-delay: 15s;
+//     }
+//     .text3 {
+//         @include typewriter;
+//         animation-delay: 20s;
+//     }
+//     .text4 {
+//         @include typewriter;
+//         animation-delay: 25s;
+//     }
 
-    @keyframes text {
-        from { 
-            width: 0; 
-        }
-    }
+//     @keyframes text {
+//         from { 
+//             width: 0; 
+//         }
+//     }
     
-    @-webkit-keyframes text {
-        from {
-            width: 0;
+//     @-webkit-keyframes text {
+//         from {
+//             width: 0;
+//         }
+//     }
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 770px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        border: 5px solid red;
+        p {
+            font-size: 3rem;
         }
     }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 771px) {
+
+}
+// End Desktop/Laptop
+
 // End Main Page Content

@@ -5,3 +5,17 @@
     font-family: $arrow-font;
     margin-bottom: -1.5rem;
 }
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 770px) {
+    .retun-top {
+        font-size: 7rem;
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 771px) {
+
+}
+// End Desktop/Laptop

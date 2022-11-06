@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 480px) and (max-width: 770px) {
+  .retun-top {
+    font-size: 7rem;
+  }
+}
 .header {
   background-color: white;
   display: flex;
@@ -140,6 +145,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 2rem;
+  padding: 2% 10%;
+  border-radius: 0 12px 12px 0;
   color: #0E9594;
   height: 40vh;
 }
@@ -147,19 +154,22 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 770px) {
+@media screen and (min-width: 480px) and (max-width: 8200px) {
   .side-nav-container {
-    top: 50vh;
-    background-color: black;
-    border-radius: 0 8px 8px 0;
+    padding-left: 0;
   }
   .side-nav-container .side-nav {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    background-color: black;
   }
 }
-@media screen and (min-width: 771px) {
+@media screen and (min-width: 821px) {
   .side-nav-container {
-    top: 30vh;
+    padding-left: 0;
+  }
+  .side-nav-container .side-nav {
+    font-size: 4rem;
+    background-color: black;
   }
 }
 footer {
@@ -229,35 +239,63 @@ footer .copyright {
   padding: 2% 0;
 }
 
-.main-container {
+main {
+  padding: 10% 0 5% 0;
+}
+main .about-container {
+  width: 70vw;
+  background-color: #3B6991;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   margin-left: 20vw;
-  padding-top: 10%;
+  padding: 5% 2%;
 }
-.main-container p {
+main .about-container h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+main .about-container p {
   display: flex;
   justify-content: flex-start;
-  color: black;
-  width: 75vw;
+  color: white;
+  width: 65vw;
   font-weight: 200;
   font-family: "Raleway", sans-serif;
-  font-size: 2.2rem;
-  line-height: 2.5;
+  font-size: 1.2rem;
+  line-height: 2;
+  overflow-wrap: break-word;
+  padding-bottom: 5%;
+}
+main .about-container .resume-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+main .about-container .resume-container .resume {
+  background-color: #0E9594;
+  border: none;
+  border-radius: 8px;
+  padding: 5%;
+}
+main .about-container .resume-container .resume a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 480px) and (max-width: 770px) {
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    border: 5px solid red;
+  main {
+    padding-bottom: 0;
   }
-  .main-container p {
-    font-size: 3rem;
+}
+@media screen and (min-width: 771px) {
+  .resume-container {
+    width: 30vw;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */

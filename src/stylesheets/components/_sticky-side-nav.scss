@@ -12,6 +12,8 @@
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 2rem;
+        padding: 2% 10%;
+        border-radius: 0 12px 12px 0;
         color: $secondary-colour;
         height: 40vh;
         li {
@@ -19,4 +21,30 @@
         }
     }
 }
+
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 8200px) {
+    .side-nav-container {
+        padding-left: 0;
+        .side-nav {
+            font-size: 3rem;
+            background-color: black;
+        }
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 821px) {
+    .side-nav-container {
+        padding-left: 0;
+        .side-nav {
+            font-size: 4rem;
+            background-color: black;
+        }
+    }
+}
+// End Desktop/Laptop
+
 // End Sticky Side Navigation Bar

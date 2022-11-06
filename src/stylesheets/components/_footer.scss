@@ -1,7 +1,7 @@
 // Footer
 footer {
-    position: fixed;
-    bottom: 0;
+    width: 100vw;
+
     // Return to Top Arrow
     .return-top {
         display: flex;
@@ -20,6 +20,9 @@ footer {
     // Main Footer Content
     .footer-container {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         .left-footer {
             font-family: $main-font;
             color: $main-colour;
@@ -61,4 +64,18 @@ footer {
         padding: 2% 0;
     }
 }
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 770px) {
+
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 771px) {
+
+}
+// End Desktop/Laptop
+
 // End Footer
+

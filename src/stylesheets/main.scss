@@ -26,34 +26,34 @@
         line-height: 2.5;
     }
 }
-    // .text1 {
-    //     @include typewriter;
-    //     animation-delay: 10s;
-    // }
-    // .text2 {
-    //     @include typewriter;
-    //     animation-delay: 15s;
-    // }
-    // .text3 {
-    //     @include typewriter;
-    //     animation-delay: 20s;
-    // }
-    // .text4 {
-    //     @include typewriter;
-    //     animation-delay: 25s;
-    // }
+    .text1 {
+        @include typewriter;
+        animation-delay: 10s;
+    }
+    .text2 {
+        @include typewriter;
+        animation-delay: 15s;
+    }
+    .text3 {
+        @include typewriter;
+        animation-delay: 20s;
+    }
+    .text4 {
+        @include typewriter;
+        animation-delay: 25s;
+    }
 
-    // @keyframes text {
-    //     from { 
-    //         width: 0; 
-    //     }
-    // }
+    @keyframes text {
+        from { 
+            width: 0; 
+        }
+    }
     
-    // @-webkit-keyframes text {
-    //     from {
-    //         width: 0;
-    //     }
-    // }
+    @-webkit-keyframes text {
+        from {
+            width: 0;
+        }
+    }
 
 // Tablet Media Breakpoint
 @media screen and (min-width: 480px) and (max-width: 820px) {

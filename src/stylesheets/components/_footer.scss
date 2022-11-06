@@ -66,14 +66,42 @@ footer {
 }
 
 // Tablet Media Breakpoint
-@media screen and (min-width: 480px) and (max-width: 770px) {
-
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    footer {
+        .footer-container {
+            .left-footer {
+                font-size: 1.5rem;
+            }
+            .right-footer {
+                a {
+                font-size: 1.6rem;
+                }
+            }
+        }
+        .copyright {
+            font-size: 1rem;
+        }
+    }
 }
 //  End Tablet
 
 // Desktop/Laptop Media Breakpoint
-@media screen and (min-width: 771px) {
-
+@media screen and (min-width: 801px) {
+    footer {
+        .footer-container {
+            .left-footer {
+                font-size: 1.5rem;
+            }
+            .right-footer {
+                a {
+                font-size: 1.5rem;
+                }
+            }
+        }
+        .copyright {
+            font-size: 1rem;
+        }
+    }
 }
 // End Desktop/Laptop
 

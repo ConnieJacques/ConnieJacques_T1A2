@@ -56,7 +56,7 @@
 //     }
 
 // Tablet Media Breakpoint
-@media screen and (min-width: 480px) and (max-width: 770px) {
+@media screen and (min-width: 480px) and (max-width: 800px) {
     .main-container {
         display: flex;
         flex-direction: column;
@@ -72,7 +72,7 @@
 //  End Tablet
 
 // Desktop/Laptop Media Breakpoint
-@media screen and (min-width: 771px) {
+@media screen and (min-width: 801px) {
 
 }
 // End Desktop/Laptop

@@ -1,0 +1,174 @@
+// Import reset settings
+@import './default/reset';
+
+// Import element stylesheeets
+@import './components/header';
+@import './components/footer';
+
+// Main Page Content
+main {
+    font-family: $main-font;
+    h2 {
+        text-align: center;
+        padding: 5% 0 2% 0;
+        color: $main-colour;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    .contact-container {
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        background-color: $main-colour;
+        color: white;
+        margin: 2%;
+        padding: 2%;
+        nav {
+            display: flex;
+            align-items: center;
+            width: 20vw;
+            .side-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                font-size: 2.5rem;
+                height: 30vh;
+                padding: 2% 10%;
+                border-radius: 12px;
+                color: $secondary-colour;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+        .contact {
+            width: 95%;
+            h3 {
+                text-align: right;
+                font-weight: 200;
+                font-size: 1.5rem;
+                margin-right: 2%;
+            }
+            .arrow {
+                @include arrow-style;
+                margin-bottom: 0;
+                font-size: 5rem;
+                color: white;
+                line-height: 4rem;
+            }
+            .form-container {
+                form {
+                    line-height: 2;
+                    input {
+                        width: 98%;
+                        border-radius: 8px;
+                        border: 0;
+                        line-height: 1.5;
+                    }
+                    #message {
+                        height: 20vh;
+                    }
+                    .button {
+                        display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        button {
+                                background-color: $secondary-colour;
+                                border: none;
+                                border-radius: 8px;
+                                padding: 5%; 
+                                color: white;
+                                font-size: 1rem;
+                                margin: 2% 0;
+                                display: flex; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Main Page Content
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 820px) {
+    main {
+        h2 {
+            font-size: 2.8rem;
+        }
+        .contact-container {
+            nav {
+                .side-nav {
+                    font-size: 5.5rem;
+                }
+            }
+            .contact {
+                h3 {
+                    font-size: 2.2rem;
+                }
+                .form-container {
+                    form {
+                        font-size: 1.5rem;
+                        line-height: 1.5;
+                        input {
+                            line-height: 2rem;
+                        }
+                        .button {
+                            button {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 821px) {
+    main {
+        h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            padding: 2% 0 0 0;
+            
+        }
+        .contact-container {
+            nav {
+                .side-nav {
+                    font-size: 8rem;
+                    height: 50vh;
+                }
+            }
+            .contact {
+                h3 {
+                    font-size: 3.2rem;
+                }
+                .arrow {
+                    font-size: 9rem;
+                }
+                .form-container {
+                    form {
+                        font-size: 2rem;
+                        line-height: 2;
+                        input {
+                            line-height: 3rem;
+                        }
+                        .button {
+                            button {
+                                font-size: 2rem;
+                                padding: 2%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Desktop/Laptop
+
+// End Main Page Content

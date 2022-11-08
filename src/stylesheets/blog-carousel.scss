@@ -1,0 +1,164 @@
+// Import reset settings
+@import '../stylesheets/default/reset';
+
+// Import element stylesheeets
+@import '../stylesheets/components/header';
+@import '../stylesheets/components/footer';
+
+// Imported partials
+@import './default/typewriter-animation';
+
+// Main Page Content
+main {
+    // Navigation Bar
+    .blog-nav {
+        padding: 5%;
+        background-color: $secondary-colour;
+        .blog-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+            font-family: $main-font;
+            color: white;
+            font-size: 1.5rem;
+            list-style-type: none;
+            }
+        }
+    }    
+    // End Navigation Bar
+
+    // Carousel
+    .carousel-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+        #left-arrow {
+            @include arrow-style;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+        }
+        .carousel-page-containter {
+            border-radius: 12px;
+            background-color: $main-colour;
+            width: 80vw;
+            text-align: center;
+            padding-bottom: 2%;
+            .slides {
+                display: flex;
+                overflow-x: scoll;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                overflow-x: scroll;
+                border-radius: 12px;
+                a {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    color: white;
+                    font-family: $main-font;
+                    text-decoration: none;
+                    scroll-snap-align: start;
+                }
+                .blog {
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+                    justify-content: center;
+                    width: 100%;
+                }
+                img {
+                    width: 80vw;
+                }
+                
+            }
+        }
+        #right-arrow {
+            @include arrow-style;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+    // End Carousel
+}
+
+// Tablet Media Breakpoint
+@media screen and (min-width: 480px) and (max-width: 820px) {
+    // Main Page Content
+    main {
+        // Navigation Bar
+        .blog-nav {
+            padding: 2% 5%;
+            background-color: $secondary-colour;
+            .blog-list {
+                li {
+                font-size: 1.5rem;
+                }
+            }
+        }    
+        // End Navigation Bar
+
+        // Carousel
+        .carousel-container {
+            #left-arrow {
+                font-size: 7rem;
+            }
+            #right-arrow {
+                font-size: 7rem;
+            }
+            .carousel-page-containter {
+                .slides {
+                        a {
+                            font-size: 1.2rem;
+                        }
+                }
+            }
+            
+        }
+        // End Carousel
+    }
+}
+//  End Tablet
+
+// Desktop/Laptop Media Breakpoint
+@media screen and (min-width: 821px) {
+    main {
+        // Navigation Bar
+        .blog-nav {
+            padding: 2% 5%;
+            background-color: $secondary-colour;
+            .blog-list {
+                li {
+                font-size: 2.5rem;
+                }
+            }
+        }    
+        // End Navigation Bar
+    
+        // Carousel
+        .carousel-container {
+            #left-arrow {
+                font-size: 9rem;
+            }
+            #right-arrow {
+                font-size: 9rem;
+            }
+            .carousel-page-containter {
+                width: 70vw;
+                .slides {
+                        a {
+                            font-size: 2rem;
+                        }
+                        img {
+                            width: 70vw;
+                        }
+                }
+            }
+        // End Carousel
+        }  
+    }
+}
+//  End Desktop/Laptop

@@ -90,22 +90,28 @@ footer {
 // Desktop/Laptop Media Breakpoint
 @media screen and (min-width: 821px) {
     footer {
-        a {
-            font-size: 7rem;
+        .return-top {
+            a {
+                font-size: 10rem;
+            }
         }
         .footer-container {
             .left-footer {
                 font-size: 2.5rem;
             }
+            .footer-arrow {
+                font-size: 10rem;
             }
             .right-footer {
                 a {
                 font-size: 2rem;
                 }
             }
+        }
         .copyright {
             font-size: 1.5rem;
         }
+        
     }
 }
 // End Desktop/Laptop

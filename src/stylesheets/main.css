@@ -48,6 +48,10 @@
   font-family: "Homemade Apple", cursive;
   font-size: 2.2rem;
 }
+.header h1 a {
+  text-decoration: none;
+  color: #3B6991;
+}
 .header h2 {
   color: #3B6991;
   text-align: center;
@@ -56,6 +60,10 @@
   font-size: 1.5rem;
   font-weight: 200;
   padding-bottom: 5%;
+}
+.header h2 a {
+  text-decoration: none;
+  color: #3B6991;
 }
 .header .header-nav-list {
   display: flex;
@@ -69,6 +77,11 @@
   font-family: "Raleway", sans-serif;
   color: #0E9594;
   font-size: 1rem;
+}
+.header .header-nav-list li a,
+.header .header-nav-list li a:visited {
+  text-decoration: none;
+  color: #3B6991;
 }
 
 @media screen and (min-width: 480px) and (max-width: 820px) {
@@ -148,6 +161,13 @@
 .side-nav-container .side-nav li {
   list-style-type: none;
 }
+.side-nav-container .side-nav li a {
+  text-decoration: none;
+  color: #0E9594;
+}
+.side-nav-container .side-nav li a:visited {
+  color: #0E9594;
+}
 
 @media screen and (min-width: 480px) and (max-width: 820px) {
   .side-nav-container {
@@ -182,7 +202,7 @@ footer .return-top a {
   text-decoration: none;
   color: #3B6991;
   font-family: "Alex Brush", cursive;
-  margin-bottom: -1.5rem;
+  line-height: 1.8rem;
   font-size: 5rem;
 }
 footer .return-top a:hover {
@@ -206,7 +226,7 @@ footer .footer-container .footer-arrow {
   text-decoration: none;
   color: #3B6991;
   font-family: "Alex Brush", cursive;
-  margin-bottom: -1.5rem;
+  line-height: 1.8rem;
   font-size: 5rem;
   padding: 0 2%;
 }
@@ -249,13 +269,16 @@ footer .copyright {
   }
 }
 @media screen and (min-width: 821px) {
-  footer a {
-    font-size: 7rem;
+  footer .return-top a {
+    font-size: 10rem;
   }
   footer .footer-container .left-footer {
     font-size: 2.5rem;
   }
-  footer .right-footer a {
+  footer .footer-container .footer-arrow {
+    font-size: 10rem;
+  }
+  footer .footer-container .right-footer a {
     font-size: 2rem;
   }
   footer .copyright {
@@ -279,6 +302,60 @@ footer .copyright {
   line-height: 2.5;
 }
 
+.text1 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 10s;
+}
+
+.text2 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 15s;
+}
+
+.text3 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 20s;
+}
+
+.text4 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: text 5s steps(40, end);
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: both;
+  animation-delay: 25s;
+}
+
+@keyframes text {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes text {
+  from {
+    width: 0;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 820px) {
   .main-container {
     margin-left: 30vw;

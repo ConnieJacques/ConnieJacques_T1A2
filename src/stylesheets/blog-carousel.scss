@@ -34,6 +34,7 @@ main {
         flex-direction: row;
         justify-content: center;
         margin-top: 5%;
+        padding-bottom: 5%;
         #left-arrow {
             @include arrow-style;
             font-size: 5rem;

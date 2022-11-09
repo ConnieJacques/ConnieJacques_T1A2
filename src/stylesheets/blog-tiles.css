@@ -253,68 +253,47 @@ main .blog-nav .blog-list a:visited {
 }
 main .blog-nav .blog-list li {
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: white;
   font-size: 1.5rem;
   list-style-type: none;
 }
-main .carousel-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 5%;
-  padding-bottom: 5%;
-}
-main .carousel-container #left-arrow {
-  text-decoration: none;
-  color: #3B6991;
-  font-family: "Alex Brush", cursive;
-  line-height: 1.8rem;
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
-}
-main .carousel-container .carousel-page-containter {
-  border-radius: 12px;
-  background-color: #3B6991;
-  width: 80vw;
+main .blog-post-container {
   text-align: center;
-  padding-bottom: 2%;
-}
-main .carousel-container .carousel-page-containter .slides {
-  display: flex;
-  overflow-x: scoll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  overflow-x: scroll;
-  border-radius: 12px;
-}
-main .carousel-container .carousel-page-containter .slides a {
-  font-size: 1.2rem;
   line-height: 1.5;
-  color: white;
   font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  scroll-snap-align: start;
 }
-main .carousel-container .carousel-page-containter .slides .blog {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  justify-content: center;
-  width: 100%;
+main .blog-post-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  padding: 2%;
+  background-color: #3B6991;
 }
-main .carousel-container .carousel-page-containter .slides img {
-  width: 80vw;
-}
-main .carousel-container #right-arrow {
-  text-decoration: none;
+main .blog-post-container h3 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
   color: #3B6991;
-  font-family: "Alex Brush", cursive;
-  line-height: 1.8rem;
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
+  padding: 5%;
+  line-height: 1.5;
+}
+main .blog-post-container a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+main .blog-post-container .blog {
+  background-color: #3B6991;
+  border-radius: 12px;
+  padding-bottom: 5%;
+  margin: 0 5% 10% 5%;
+}
+main .blog-post-container img {
+  width: 90vw;
+  border-radius: 12px 12px 0 0;
+  padding-bottom: 2%;
 }
 
 @media screen and (min-width: 480px) and (max-width: 820px) {
@@ -325,14 +304,15 @@ main .carousel-container #right-arrow {
   main .blog-nav .blog-list li {
     font-size: 1.5rem;
   }
-  main .carousel-container #left-arrow {
-    font-size: 7rem;
+  main .blog-post-container h3 {
+    padding: 2% 5%;
+    line-height: 2rem;
   }
-  main .carousel-container #right-arrow {
-    font-size: 7rem;
+  main .blog-post-container a {
+    font-size: 1.5rem;
   }
-  main .carousel-container .carousel-page-containter .slides a {
-    font-size: 1.2rem;
+  main .blog-post-container .blog {
+    margin: 0 5% 5% 5%;
   }
 }
 @media screen and (min-width: 821px) {
@@ -343,21 +323,40 @@ main .carousel-container #right-arrow {
   main .blog-nav .blog-list li {
     font-size: 2.5rem;
   }
-  main .carousel-container #left-arrow {
-    font-size: 9rem;
+  main .blog-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
   }
-  main .carousel-container #right-arrow {
-    font-size: 9rem;
+  main .blog-post-container h2 {
+    font-size: 3.5rem;
+    width: 100vw;
   }
-  main .carousel-container .carousel-page-containter {
+  main .blog-post-container h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 2% 5% 0 5%;
+    line-height: 2rem;
+  }
+  main .blog-post-container .tile-container {
+    margin-bottom: 0%;
     width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
   }
-  main .carousel-container .carousel-page-containter .slides a {
-    font-size: 2rem;
+  main .blog-post-container .tile-container a {
+    font-size: 1.8rem;
   }
-  main .carousel-container .carousel-page-containter .slides img {
+  main .blog-post-container .tile-container .blog {
+    width: 70vw;
+    margin: 2% 0;
+  }
+  main .blog-post-container .tile-container img {
     width: 70vw;
   }
 }
 
-/*# sourceMappingURL=blog-carousel.css.map */
+/*# sourceMappingURL=blog-tiles.css.map */

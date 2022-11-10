@@ -78,8 +78,12 @@ main {
                         font-family: $main-font;
                         padding-left: 2%;
                     }
+                    input:focus {
+                        outline: none;
+                    }
                     #message {
                         height: 20vh;
+                        padding-bottom: 10rem;
                     }
                     .button {
                         display: flex;

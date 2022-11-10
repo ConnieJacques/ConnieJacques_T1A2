@@ -327,8 +327,12 @@ main .contact-container .contact .form-container form input {
   font-family: "Raleway", sans-serif;
   padding-left: 2%;
 }
+main .contact-container .contact .form-container form input:focus {
+  outline: none;
+}
 main .contact-container .contact .form-container form #message {
   height: 20vh;
+  padding-bottom: 10rem;
 }
 main .contact-container .contact .form-container form .button {
   display: flex;

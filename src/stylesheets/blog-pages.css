@@ -367,6 +367,7 @@ main .blog-container blockquote {
   main img {
     width: 80vw;
     margin-left: 10vw;
+    margin-bottom: 2%;
   }
   main .blog-container {
     width: 80vw;

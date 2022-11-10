@@ -158,7 +158,7 @@
   display: flex;
   position: sticky;
   position: -webkit-sticky;
-  top: 20vh;
+  top: 45vh;
   padding-left: 5vw;
   height: 0;
   width: 20vw;
@@ -192,17 +192,19 @@
   .side-nav-container .side-nav {
     font-size: 3rem;
     background-color: black;
+    height: 35vh;
   }
 }
 @media screen and (min-width: 821px) {
   .side-nav-container {
     padding-left: 0;
-    top: 40vh;
+    top: 38vh;
   }
   .side-nav-container .side-nav {
     padding: 2% 5%;
     font-size: 3rem;
     background-color: black;
+    height: 40vh;
   }
 }
 footer {

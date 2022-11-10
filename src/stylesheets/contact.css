@@ -21,15 +21,30 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  animation-name: spin;
-  animation-duration: 10s;
-  animation-delay: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 .header .logo-container .logo-background img {
   width: 100px;
   height: 100px;
+}
+@-webkit-keyframes spin {
+  0% {
+    background: conic-gradient(orange, rgb(238, 22, 22), yellow, rgb(21, 177, 21), rgb(156, 234, 234), rgb(101, 101, 241), rgb(157, 14, 157), rgb(241, 154, 169));
+    transform: rotate(0);
+  }
+  100% {
+    background: conic-gradient(orange, rgb(238, 22, 22), yellow, rgb(21, 177, 21), rgb(156, 234, 234), rgb(101, 101, 241), rgb(157, 14, 157), rgb(241, 154, 169));
+    transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   0% {
@@ -386,6 +401,4 @@ main .contact-container .contact .form-container form .button button {
     font-size: 2rem;
     padding: 2%;
   }
-}
-
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

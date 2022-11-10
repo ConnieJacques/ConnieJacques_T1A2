@@ -40,11 +40,12 @@ main {
         font-family: $main-font;
         h2 {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-family: $main-font;
-            color: black;
+            color: $secondary-colour;
             padding: 2%;
-            background-color: $main-colour;
+            background-color: black;
+            font-weight: 200;
         }
         h3 {
             text-align: left;
@@ -54,22 +55,24 @@ main {
             padding: 5%;
             line-height: 1.5;
         }
-        a {
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            font-size: 1rem;
-        }
-        .blog {
-            background-color: $main-colour;
-            border-radius: 12px;
-            padding-bottom: 5%;
-            margin: 0 5% 10% 5%;
-        }
-        img {
-            width: 90vw;
-            border-radius: 12px 12px 0 0;
-            padding-bottom: 2%;
+        .tile-container {
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                font-size: 1rem;
+            }
+            .blog {
+                background-color: $main-colour;
+                border-radius: 12px;
+                padding-bottom: 5%;
+                margin: 0 5% 10% 5%;
+            }
+            img {
+                width: 90vw;
+                border-radius: 12px 12px 0 0;
+                padding-bottom: 2%;
+            }
         }
     }
     // End Blog Tiles
@@ -97,11 +100,13 @@ main {
                 padding: 2% 5%;
                 line-height: 2rem;
             }
-            a {
-                font-size: 1.5rem;
-            }
-            .blog {
-                margin: 0 5% 5% 5%;
+            .tile-container {
+                a {
+                    font-size: 1.5rem;
+                }
+                .blog {
+                    margin: 0 5% 5% 5%;
+                }
             }
         }
         // End// Blog Tiles
@@ -132,13 +137,16 @@ main {
             align-items: center;
             padding-bottom: 2%;
             h2 {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 width: 100vw;
+                padding: 1%;
+                background-color: black;
+                color: $secondary-colour;
             }
             h3 {
                 font-size: 1.8rem;
                 font-weight: 400;
-                padding: 2% 5% 0 5%;
+                padding: 2% 5%;
                 line-height: 2rem;
             }
             .tile-container {
@@ -147,8 +155,9 @@ main {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 2%;
+                font-size: 1rem;
                 a {
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                 }
                 .blog {
                     width: 70vw;

@@ -264,11 +264,12 @@ main .blog-post-container {
 }
 main .blog-post-container h2 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: #0E9594;
   padding: 2%;
-  background-color: #3B6991;
+  background-color: black;
+  font-weight: 200;
 }
 main .blog-post-container h3 {
   text-align: left;
@@ -278,19 +279,19 @@ main .blog-post-container h3 {
   padding: 5%;
   line-height: 1.5;
 }
-main .blog-post-container a {
+main .blog-post-container .tile-container a {
   text-decoration: none;
   text-align: center;
   color: white;
   font-size: 1rem;
 }
-main .blog-post-container .blog {
+main .blog-post-container .tile-container .blog {
   background-color: #3B6991;
   border-radius: 12px;
   padding-bottom: 5%;
   margin: 0 5% 10% 5%;
 }
-main .blog-post-container img {
+main .blog-post-container .tile-container img {
   width: 90vw;
   border-radius: 12px 12px 0 0;
   padding-bottom: 2%;
@@ -308,10 +309,10 @@ main .blog-post-container img {
     padding: 2% 5%;
     line-height: 2rem;
   }
-  main .blog-post-container a {
+  main .blog-post-container .tile-container a {
     font-size: 1.5rem;
   }
-  main .blog-post-container .blog {
+  main .blog-post-container .tile-container .blog {
     margin: 0 5% 5% 5%;
   }
 }
@@ -331,13 +332,16 @@ main .blog-post-container img {
     padding-bottom: 2%;
   }
   main .blog-post-container h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 100vw;
+    padding: 1%;
+    background-color: black;
+    color: #0E9594;
   }
   main .blog-post-container h3 {
     font-size: 1.8rem;
     font-weight: 400;
-    padding: 2% 5% 0 5%;
+    padding: 2% 5%;
     line-height: 2rem;
   }
   main .blog-post-container .tile-container {
@@ -346,9 +350,10 @@ main .blog-post-container img {
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
+    font-size: 1rem;
   }
   main .blog-post-container .tile-container a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   main .blog-post-container .tile-container .blog {
     width: 70vw;

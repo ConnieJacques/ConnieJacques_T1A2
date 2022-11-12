@@ -6,6 +6,7 @@ The published website can be accessed at: https://conniejacquesdev.netlify.app/
 GitHub repository: https://github.com/ConnieJacques/ConnieJacques_T1A2
 
 ### Presentation Video
+My presentation video is available on Loom here: https://www.loom.com/share/b83a592a58b644feac3f84928a397d97
 
 ### Description
 This website portfolio contains infomation about Connie Jacques, a full-stack web developer in training, and showcases some of her work. The header navigation bar will direct the user to learn more about Connie, view her current projects, read her blog and get in contact with her. Her socials can be accessed through the side navigation bar. 

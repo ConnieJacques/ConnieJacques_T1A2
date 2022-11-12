@@ -28,19 +28,18 @@
 }
     .text1 {
         @include typewriter;
-        animation-delay: 5s;
     }
     .text2 {
         @include typewriter;
-        animation-delay: 10s;
+        animation-delay: 5s;
     }
     .text3 {
         @include typewriter;
-        animation-delay: 15s;
+        animation-delay: 10s;
     }
     .text4 {
         @include typewriter;
-        animation-delay: 20s;
+        animation-delay: 15s;
     }
 
     @keyframes text {

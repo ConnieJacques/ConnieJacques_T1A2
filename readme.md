@@ -1,4 +1,4 @@
-# Website Portfolio for Connie Jacques, web developer
+# Website Portfolio for Connie Jacques, Web Developer
 
 ### Access
 The published website can be accessed at: https://conniejacquesdev.netlify.app/
